@@ -1,0 +1,435 @@
+<html lang="en" itemtype="https://schema.org/WebPage" itemscope=""><head>
+    <!-- updated with schema, seo and responsive weekend of 2016-05-01 -->
+    <!-- updated analytics code evening of 2016-05-10 -->
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>The Online Calculator</title>
+    <meta name="description" itemprop="description" content="Basic Online Calculator with 10-digit keypad and 4 functions to add, subtract, multiply and divide numbers. Includes basic handheld calculator functions for square, square root, percent, sign change, Pi and memory.">
+    <!-- for other features refer to https://www.w3.org/wiki/WebSchemas/Accessibility -->
+    <meta itemprop="accessibilityFeature" content="highContrastDisplay">
+    <meta itemprop="accessibilityFeature" content="fullKeyboardControl">
+    <meta itemprop="accessibilityFeature" content="fullMouseControl">
+    <meta itemprop="accessibilityFeature" content="fullTouchControl">
+    <!-- BEGIN favicon icon files -->
+    <!-- http://realfavicongenerator.net/ -->
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png?v=20170215">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    <style type="text/css">
+        /* from normalize
+        /* reduced then moved to pages */
+        /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+        <!--
+        html {
+            -ms-text-size-adjust: 100%; /* 2 */
+            -webkit-text-size-adjust: 100%; /* 2 */
+        }
+
+        body {
+            margin: 0;
+        }
+
+        aside,
+        footer,
+        header,
+        main,
+        nav {
+            display: block;
+        }
+
+        a {
+            background-color: transparent;
+        }
+
+        a:active,
+        a:hover {
+            outline: 0;
+        }
+
+        b,
+        strong {
+            font-weight: bold;
+        }
+
+        sub,
+        sup {
+            font-size: 75%;
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline;
+        }
+
+        sup {
+            top: -0.5em;
+        }
+
+        sub {
+            bottom: -0.25em;
+        }
+
+        img {
+            border: 0;
+        }
+
+        hr {
+            -moz-box-sizing: content-box;
+            box-sizing: content-box;
+            height: 0;
+        }
+
+        button,
+        input,
+        optgroup,
+        select,
+        textarea {
+            color: inherit; /* 1 */
+            font: inherit; /* 2 */
+            margin: 0; /* 3 */
+        }
+
+        button {
+            //overflow: visible;
+display:block;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  border: 1px solid red;
+ 
+       }
+
+        button,
+        select {
+            text-transform: none;
+        }
+
+        button,
+        html input[type="button"], /* 1 */
+        input[type="reset"],
+        input[type="submit"] {
+            -webkit-appearance: button; /* 2 */
+            cursor: pointer; /* 3 */
+        }
+
+        button[disabled],
+        html input[disabled] {
+            cursor: default;
+        }
+
+        button::-moz-focus-inner,
+        input::-moz-focus-inner {
+            border: 0;
+            padding: 0;
+        }
+
+        input {
+            line-height: normal;
+        }
+
+        input[type="checkbox"],
+        input[type="radio"] {
+            box-sizing: border-box; /* 1 */
+            padding: 0; /* 2 */
+        }
+
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            height: auto;
+        }
+
+        input[type="search"] {
+            -webkit-appearance: textfield; /* 1 */
+            -moz-box-sizing: content-box;
+            -webkit-box-sizing: content-box; /* 2 */
+            box-sizing: content-box;
+        }
+
+        input[type="search"]::-webkit-search-cancel-button,
+        input[type="search"]::-webkit-search-decoration {
+            -webkit-appearance: none;
+        }
+
+        fieldset {
+            border: 1px solid #c0c0c0;
+            margin: 0 2px;
+            padding: 0.35em 0.625em 0.75em;
+        }
+
+        textarea {
+            overflow: auto;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 4px;
+        }
+
+        div#table {
+            display: table;
+            margin: auto;
+        }
+
+        div#row {
+            display: table-row;
+        }
+
+        div#calculatorWrap {
+            display: table-cell;
+            background: #f0f0f0;
+            padding: 4px 8px 8px 8px;
+            border: 1px solid #aaa;
+            border-radius: 4px;
+            text-align: center;
+            margin: auto;
+        }
+
+        /* below 360 */
+        @media screen and (max-width: 350px) {
+
+            div#calculatorWrap {
+                padding: 1px 1px 1px 1px;
+            }
+        }
+
+        input.button:focus,
+        input.window:focus {
+            /* outline: none; */
+            outline: 1px solid #000;
+        }
+
+        input.button {
+            width: 2.75em;
+            line-height: 2.096em;
+            text-align: center;
+            color: #444444;
+            background-color: #ddd;
+            border: 1px solid #ccc;
+            font-size: 1.5em;
+            margin-top: 4px;
+        }
+
+        input.window {
+            width: 11.5em;
+            line-height: 2em;
+            border: 1px solid #999;
+            font-size: 1.5em;
+            margin-top: 4px;
+            color: #000000;
+            background-color: #ffffff;
+            text-align: right;
+        }
+
+        input.number {
+            background-color: #f6f6f6;
+            color: #000000;
+            font-weight: bold;
+        }
+
+        input.operator {
+            /* background-color: #F1C9C7; */
+            background-color: #EF902D;
+            color: #000000;
+            font-weight: bold;
+        }
+
+        input.button:hover {
+            border: 1px solid #999; /*cursor:pointer;*/
+        }
+
+        input.button:active {
+            background-color: #ccc; /*cursor:pointer;*/
+        }
+
+        h1.heading, h2.heading {
+            text-align: center;
+            font-style: italic;
+            font-size: 1.5em;
+            margin: 4px;
+            color: #666666;
+            background-color: #FFFFFF;
+        }
+
+        p {
+            margin: 1em;
+        }
+
+        .hidden {
+            position: absolute;
+            left: -10000px;
+            top: auto;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+        }
+
+        /* from Calculator Soup */
+        .note {
+            font-weight: normal;
+            font-style: italic;
+            color: #666;
+            font-size: 80%;
+        }
+
+        .alignCenter {
+            text-align: center;
+        }
+
+        .alignRight {
+            text-align: right;
+        }
+
+        div#titleSmall {
+            margin: 12px 4px 0px 4px;
+            font-size: 70%;
+        }
+
+        div#titleSmall a {
+            text-decoration: none;
+        }
+
+        div#titleSmall span.calculator {
+            font-family: 'Segoe UI';
+            font-size: 1.2em;
+            color: #333333;
+            background-color: inherit;
+            font-weight: bold;
+        }
+
+        div#titleSmall span.soup {
+            font-family: 'Segoe UI';
+            font-size: 1.1em;
+            color: #bd362f;
+            background-color: inherit;
+            font-weight: bold;
+            margin-left: -3px;
+        }
+
+        -->
+    </style>
+    
+</head>
+<body>
+<main itemprop="mainContentOfPage">
+    <div itemscope="" itemtype="https://schema.org/SoftwareApplication">
+        <link itemprop="applicationCategory" href="https://schema.org/WebApplication">
+        <meta itemprop="operatingSystem" content="Browser required with JavaScript support">
+        <link itemprop="url" href="https://www.theonlinecalculator.com/">
+        
+        <div id="table">
+            <div id="row">
+                <div id="calculatorWrap">
+                    <form action="" id="calculator" name="calculator">
+                        <div>
+                            <label for="display" class="hidden">display only</label>
+
+                            <input type="button" class="window" name="display" id="display" value="6336">
+                        </div>
+                        <div>
+                            <input type="button" class="button" name="memory_clearButton" value="MC" onclick="memory_clear()" title="Clear the memory.">
+                            <input type="button" class="button" name="memory_plusButton" value="M+" onclick="memory_plus()" title="Add the displayed value to the memory.">
+                            <input type="button" class="button" name="memory_minusButton" value="M-" onclick="memory_minus()" title="Subtract the displayed value from the memory.">
+                            <input type="button" class="button" name="memory_recallButton" value="MR" onclick="memory_recall()" title="MR Recall the value stored in memory and display it">
+                        </div>
+                        <div>
+                            <input type="button" class="button" name="clearButton" value="CE" onclick="display_clear()" title="CE is Clear Entry; AC is Clear All; Press once to clear current entry, press twice to clear all.">
+                            <input type="button" class="button" name="root2" value="v" onclick="func('squareroot')" title="Calculate the square root of the displayed value.">
+                            <input type="button" class="button" name="percentButton" value="%" onclick="func('percent')" title="Enter displayed value as a percentage and convert to its decimal equivalent.">
+                            <input type="button" class="button operator" name="divide" value="÷" onclick="enterOperator('/')" title="Divide (press /)">
+                        </div>
+                        <div>
+                            <input type="button" class="button number" name="seven" value="7" onclick="enterValue('7')">
+                            <input type="button" class="button number" name="eight" value="8" onclick="enterValue('8')">
+                            <input type="button" class="button number" name="nine" value="9" onclick="enterValue('9')">
+                            <input type="button" class="button operator" name="multiply" value="×" onclick="enterOperator('*')" title="Multiply (press ×)">
+                        </div>
+                        <div>
+                            <input type="button" class="button number" name="four" value="4" onclick="enterValue('4')">
+                            <input type="button" class="button number" name="five" value="5" onclick="enterValue('5')">
+                            <input type="button" class="button number" name="six" value="6" onclick="enterValue('6')">
+                            <input type="button" class="button operator" name="subtract" value="-" onclick="enterOperator('-')" title="Subtract (press -)">
+                        </div>
+                        <div>
+                            <input type="button" class="button number" name="one" value="1" onclick="enterValue('1')">
+                            <input type="button" class="button number" name="two" value="2" onclick="enterValue('2')">
+                            <input type="button" class="button number" name="three" value="3" onclick="enterValue('3')">
+                            <input type="button" class="button operator" name="add" value="+" onclick="enterOperator('+')" title="Add (press +)">
+                        </div>
+                        <div>
+                            <input type="button" class="button number" name="zero" value="0" onclick="enterValue('0')">
+                            <input type="button" class="button number" name="decimal" value="." onclick="enterValue('.')">
+                            <input type="button" class="button number" name="negateButton" value="+/-" onclick="func('negate')" title="Negate the displayed value">
+                            <input type="button" class="button operator" name="calculate" value="=" onclick="enterOperator('=')" title="Execute calculation (press =)">
+                        </div>
+                        <div>
+                            <input type="button" class="button" name="negateButton" value="p" onclick="func('pi')" title="Display the value of Pi">
+                            <input type="button" class="button" name="negateButton" value="x²" onclick="func('square')" title="Square the displayed value">
+                            <input type="button" class="button" name="zero" value="R2" onclick="func('r2')" title="Round display to 2 decimal places">
+                            <input type="button" class="button" name="decimal" value="R0" onclick="func('r0')" title="Round display to 0 decimal places">
+                        </div>
+
+
+                        <input type="hidden" name="memory" value="0">
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</main>
+
+<script type="text/javascript" src="includes/basic007.min.js?v=20170424"></script>
+<!--
+<script>
+    /* seems to work on galaxy but not ipad iphone */
+    window.addEventListener("touchstart", preventZoom);
+    function preventZoom(e) {
+        var t2 = e.timeStamp;
+        var t1 = e.currentTarget.dataset.lastTouch || t2;
+        var dt = t2 - t1;
+        var fingers = e.touches.length;
+        e.currentTarget.dataset.lastTouch = t2;
+
+        if (!dt || dt > 500 || fingers > 1) return; // not double-tap
+
+        e.preventDefault();
+        e.target.click();
+    }
+</script>
+-->
+
+
+</body></html>

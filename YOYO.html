@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+ 
+<html xmlns="http://www.w3.org/1999/xhtml">
+ 
+  <head>
+    <title>Amortization Calculator</title>
+    <style>
+      body {background-color:white; font-family: Arial, Helvetica, sans-serif}
+      h2 {color:blue; letter-spacing: 1em; font-size: 1.5em; text-align: center}
+      input {color:blue; margin-left: 15px}
+      td {text-align:center; background-color:yellow}
+    </style>
+<link href="style1.css" rel="stylesheet">
+  
+ 
+    <script type="text/javascript" src="amort.js"></script>
+ 
+  </head>
+ 
+  <body>
+ 
+    <center>
+      <div id="mainForm">
+        <form id="form1" name="form1">
+          <table>
+            <tr><td> Loan Amount</td>
+              <td><input id="amount" name="amount" size="8" /></td>
+            </tr>
+            <tr><td> Interest Rate</td>
+              <td><input id="rate" name="rate" size="5" /></td>
+            </tr>
+            <tr><td> Number of Payments</td>
+              <td><input id="numPay" name="numPay" size="5" /></td>
+            </tr>
+            <tr><td></td>
+              <!-- Clicking the Commit button invokes the commitData() function in the <script> section above -->
+              <td><input type="button" onclick="commitData()" value="Calculate" /></td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </center>
+  </body>
+</html>

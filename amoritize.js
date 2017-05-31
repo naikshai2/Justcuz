@@ -102,10 +102,16 @@ var t=0;
     }
     var data = new google.visualization.arrayToDataTable(dataArray);
     var options = {
-      title: 'Principal/Interest Graph'
+      title: 'Principal/Interest Graph',
+colors: ['#f99d1b', '#17323f'],
+backgroundColor:'#ffffff',
+fontSize:14,
+is3D:true,
+legend:{position: 'bottom' },
+titleTextStyle:{color: 'black',fontSize: 30}
     };
     var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-    chart.draw(data, {width: 900, height: 500,title: 'Principal/Interest Graph'});
+    chart.draw(data, options);
 }
 google.setOnLoadCallback(drawData);
 })();

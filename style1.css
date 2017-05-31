@@ -1,0 +1,509 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+@font-face {
+	font-family: 'Segoe UI';
+	src: url('fonts/SegoeUI-Bold.eot');
+	src: url('fonts/SegoeUI-Bold.eot?#iefix') format('embedded-opentype'),
+		url('fonts/SegoeUI-Bold.woff2') format('woff2'),
+		url('fonts/SegoeUI-Bold.woff') format('woff'),
+		url('fonts/SegoeUI-Bold.ttf') format('truetype'),
+		url('fonts/SegoeUI-Bold.svg#SegoeUI-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Segoe UI';
+	src: url('fonts/SegoeUI.eot');
+	src: url('fonts/SegoeUI.eot?#iefix') format('embedded-opentype'),
+		url('fonts/SegoeUI.woff2') format('woff2'),
+		url('fonts/SegoeUI.woff') format('woff'),
+		url('fonts/SegoeUI.ttf') format('truetype'),
+		url('fonts/SegoeUI.svg#SegoeUI') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'seguisb';
+    src: url('fonts/seguisb.eot');
+    src: url('fonts/seguisb.eot') format('embedded-opentype'),
+         url('fonts/seguisb.woff2') format('woff2'),
+         url('fonts/seguisb.woff') format('woff'),
+         url('fonts/seguisb.ttf') format('truetype'),
+         url('fonts/seguisb.svg#seguisb') format('svg');
+}
+
+
+@font-face {
+	font-family: 'Segoe UI';
+	src: url('fonts/SegoeUI-Light.eot');
+	src: url('fonts/SegoeUI-Light.eot?#iefix') format('embedded-opentype'),
+		url('fonts/SegoeUI-Light.woff2') format('woff2'),
+		url('fonts/SegoeUI-Light.woff') format('woff'),
+		url('fonts/SegoeUI-Light.ttf') format('truetype'),
+		url('fonts/SegoeUI-Light.svg#SegoeUI-Light') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Segoe UI';
+	src: url('fonts/SegoeUI-SemiBold.eot');
+	src: url('fonts/SegoeUI-SemiBold.eot?#iefix') format('embedded-opentype'),
+		url('fonts/SegoeUI-SemiBold.woff2') format('woff2'),
+		url('fonts/SegoeUI-SemiBold.woff') format('woff'),
+		url('fonts/SegoeUI-SemiBold.ttf') format('truetype'),
+		url('fonts/SegoeUI-SemiBold.svg#SegoeUI-SemiBold') format('svg');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Aclonica';
+	src: url('fonts/Aclonica-Regular.eot');
+	src: url('fonts/Aclonica-Regular.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Aclonica-Regular.woff2') format('woff2'),
+		url('fonts/Aclonica-Regular.woff') format('woff'),
+		url('fonts/Aclonica-Regular.ttf') format('truetype'),
+		url('fonts/Aclonica-Regular.svg#Aclonica-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+body {
+	font-family: 'Segoe UI';
+	font-weight: normal;
+	font-style: normal;
+	font-size:15px;
+	padding : 0px 0px 0px 0px;
+	margin : 0px 0px 0px 0px;
+	color:#2e2e2e;
+	
+}
+
+
+div, h1, h2, h3, h4, h5, h6, p, img, ul, ol, li, form, input, textarea, dl, dt, dd  { padding : 0px 0px 0px 0px; margin : 0;	font-weight:normal; vertical-align:baseline;}
+header, footer, section,  nav, article, aside {display: block; padding : 0px 0px 0px 0px; margin : 0px;	font-weight:normal; vertical-align:baseline;}
+
+ul {list-style : none;}
+
+li {list-style : none;}
+
+img {outline : none;	border : none;	vertical-align:middle; padding:0px; margin:0px;}
+
+a {	outline : none;	text-decoration : none;}
+a:hover { text-decoration:none;}
+
+.clr{ clear:both; height:0px; margin:0px; padding:0px;}
+
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
+	outline:none;
+	outline:none;
+	outline-offset:-2px
+}
+
+
+/* --------------------- main css ------------------------------------------------------*/
+
+.wrapper {width:100%; }
+
+
+
+/* --------------------- header css ------------------------------------------------------*/
+
+.headerTop { padding:2px 0px;}
+
+.headaerwelcom { text-align:right; font-size:16px; padding:10px 0px 10px 0px;}
+.headaerwelcom a { color:#2e2e2e; padding:0px 5px 0px 5px; }
+.headaerwelcom a:hover {color:#ef902d; text-decoration:none; cursor:pointer;}
+
+.needhelp { color:#0c6dd4; font-size:28px; line-height:28px; padding-bottom:20px; text-align:right;}
+
+.needhelp span {font-family: 'Segoe UI'; font-weight:bold;}
+
+.headaerwelcom span { font-style: italic; padding-right:10px;}
+
+.headerSearch { background-color:#1479e3; padding:7px 0px;}
+
+.register { background-color:#f0c02d; font-size:20px;  color:#000; font-family: 'Segoe UI'; font-weight:bold; padding:5px 10px; width:100%; border: solid 1px #f0c02d;}
+
+.register.focus, .register:focus {
+    background-color: rgb(239, 144, 45);
+    border-color: rgb(239, 144, 45);
+    color: rgb(255, 255, 255);
+}
+
+
+.register:hover {
+    background-color: rgb(239, 144, 45);
+    border-color: rgb(239, 144, 45);
+    color: rgb(255, 255, 255);
+}
+
+.register.active, .register:active, .open > .dropdown-toggle.register {
+   background-color: rgb(239, 144, 45);
+    border-color: rgb(239, 144, 45);
+    color: rgb(255, 255, 255);
+}
+
+
+.register.active.focus, .register.active:focus, .register.active:hover, .register:active.focus, .register:active:focus, .register:active:hover, .open>.dropdown-toggle.register.focus, .open>.dropdown-toggle.register:focus, .open>.dropdown-toggle.register:hover {
+  background-color: rgb(239, 144, 45);
+    border-color: rgb(239, 144, 45);
+    color: rgb(255, 255, 255);
+}
+
+
+
+/* --------------------- menu css ------------------------------------------------------*/
+
+.navbar-default {
+    background-color: rgb(248, 248, 248);
+    border-color: rgb(231, 231, 231);
+}
+.navbar {
+    border-radius: 0px;
+}
+.navbar {
+    border: 1px solid rgba(0, 0, 0, 0);
+    margin-bottom: 0px;
+    min-height: inherit;
+    position: relative;
+}
+
+.nav > li > a {
+    display: block;
+    padding: 7px 14px 7px 14px;
+    position: relative;
+	text-transform:uppercase;
+	font-size:16px;
+	margin-right:1px;
+	color:#2e2e2e;
+	font-family: 'Segoe UI';
+}
+
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+    background-color: #ef902d;;
+    color: #fff;
+	border-radius:3px;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+     background-color: #ef902d;;
+    color: #fff;
+	border-radius:3px;
+}
+
+.navbar-toggle {
+    background-color:transparent;
+    background-image: none;
+    border: transparent;
+    border-radius: 0px;
+    float: right;
+    margin-bottom: 8px;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding: 9px 0px;
+    position: relative;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: rgb(239, 144, 45);
+}
+
+
+.searchCus {
+	 background-color: rgb(255, 255, 255);
+    background-image: none;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 3px;
+    box-shadow: none;
+    color: rgb(85, 85, 85);
+    display: block;
+    font-size: 14px;
+    height: 42px;
+    padding: 0px 12px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    width: 100%;
+	}
+	
+	
+	.searchCus:focus {
+    border-color: transparent;
+    box-shadow: none;
+    outline: 0 none;
+}
+
+
+.searchCusButton {
+    -moz-user-select: none;
+    background-image: none;
+    border: 1px solid rgba(239, 144, 45, 0);
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+	height:42px;
+    margin-bottom: 0;
+    padding: 0px 12px;
+    text-align: left;
+    vertical-align: middle;
+    white-space: nowrap;
+	color:#ef902d;
+	
+}
+
+.searchCusButton:hover {
+    background-color: rgb(239, 144, 45);
+    border-color: rgb(239, 144, 45);
+    color: rgb(255, 255, 255);
+}
+
+.searchCusButton.focus, .searchCusButton:focus {
+     background-color: rgb(239, 144, 45);
+    border-color: rgb(239, 144, 45);
+    color: rgb(255, 255, 255);
+}
+
+
+.searchCusButton.active, .searchCusButton:active, .open > .dropdown-toggle.searchCusButton {
+    background-color: rgb(239, 144, 45);
+    border-color: rgb(239, 144, 45);
+    color: rgb(255, 255, 255);
+}
+
+
+.searchCusButton.active.focus, .searchCusButton.active:focus, .searchCusButton.active:hover, .searchCusButton:active.focus, .searchCusButton:active:focus, .searchCusButton:active:hover, .open>.dropdown-toggle.searchCusButton.focus, .open>.dropdown-toggle.searchCusButton:focus, .open>.dropdown-toggle.searchCusButton:hover {
+	  background-color: rgb(239, 144, 45);
+    border-color: rgb(239, 144, 45);
+    color: rgb(255, 255, 255);
+}
+
+
+.tar { text-align:right;}
+
+/* --------------------- body css ------------------------------------------------------*/
+
+
+.bodyCon { padding:50px 0px 20px 0px;}
+h1 { text-transform:uppercase; font-size:30px; padding-bottom:10px; line-height:30px; letter-spacing:1px; }
+h1 span {font-family: 'Segoe UI'; font-weight:bold;}
+
+.bodyCon h5 { padding-top:20px; font-size:16px; line-height:24px;}
+
+.textBold {font-family: 'Segoe UI'; font-weight:bold;}
+
+.tableSec { margin:30px 0px 0px 0px;}
+
+label { font-weight:normal; margin-bottom:0px; }
+
+.sky-form .input input, .sky-form .select select, .sky-form .textarea textarea {
+    -moz-appearance: none;
+    background: rgb(255, 255, 255) none repeat scroll 0 0;
+    border-radius: 0;
+    border-style: solid;
+    border-width: 2px;
+    box-sizing: border-box;
+    display: block;
+    height: 42px;
+    outline: medium none;
+    padding: 5px 10px;
+    width: 100%;
+}
+
+.sky-form .select i::after {
+    border-top: 4px solid rgb(0, 0, 0);
+    bottom: 0;
+}
+
+.formtextbox { border: solid 1px #fff; height:28px; line-height:25px; color:#333; font-size:14px; width:85%; outline:none; border: solid 1px #EAEAEA; padding:0px 10px;  }
+.formtextboxTwo {
+    border: solid 1px #fff;
+    height: 28px;
+    line-height: 25px;
+    color: #333;
+    font-size: 14px;
+    width: 77%;
+    margin-right: 5%;
+    outline: none;
+    border: solid 1px #000;
+    padding: 0px 10px;
+    background: #ffd300;
+    margin-left: 3%;
+}
+.formtextboxThree { border: solid 1px #fff; height:28px; line-height:40px; color:#333; font-size:14px; width:100%; outline:none; border: solid 1px #EAEAEA; padding:0px 10px; }
+.formtextboxfour { border: solid 1px #fff; height:60px; line-height:16px; color:#333; font-size:14px; width:100%; outline:none; border: solid 1px #EAEAEA; padding:0px 10px; }
+.formtextboxSeven {
+    border: solid 1px #fff;
+    height: 28px;
+    line-height: 25px;
+    color: #333;
+    font-size: 14px;
+    width: 77%;
+    margin-right: 5%;
+    outline: none;
+    border: solid 3px #fd0000;
+    padding: 0px 10px;
+    background: #ffd300;
+    margin-left: 3%;
+}
+.tableTitle { font-size:20px; font-family: 'Segoe UI';  font-weight:bold !important; padding:10px 20px !important;}
+
+.borderRn { border-right: solid 1px #fff !important;}
+
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+    border-top: 1px solid rgb(221, 221, 221);
+    line-height: 1.42857;
+    padding: 5px  20px;
+    vertical-align: top;
+}
+
+
+/* --------------------- footer css ------------------------------------------------------*/
+
+.footerSection { background-image:url(../images/footerBg.jpg); background-position: center bottom; background-repeat:no-repeat; background-color:#ffffff; padding:180px 0px 110px 0px; position:relative; text-align:center;}
+.social { padding-bottom:25px;}
+.social a { padding:0px 4px;}
+.social a:hover {}
+
+.footerAddress { font-size:20px; color:#474747; line-height:20px; padding-bottom:20px;}
+
+.footerAddress .fa { padding:0px 16px; font-size:12px; line-height:14px;}
+
+
+.footerMenu {text-align:center;}
+.footerMenu li {display:inline;}
+.footerMenu a {text-decoration:none; padding:0 10px; color:#262626; font-size:14px;}
+.footerMenu a:hover {text-decoration:none; color:#ef902d;}
+
+
+.copyright { font-size:12px; text-align:center; padding:20px 0px 0px 0px;}
+
+.footerLion { position:absolute; bottom:0; right:7%;}
+.footerHelp { position:absolute; bottom:10px; left:5%;}
+
+.footerCon { position:relative; z-index:1;}
+
+
+
+
+/* --------------------- form css ------------------------------------------------------*/
+
+
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+    border-top: 1px solid rgb(221, 221, 221);
+    line-height: 1.42857;
+    padding: 5px 20px;
+    vertical-align: middle;
+}
+
+
+.sky-form .checkbox input + i::after {
+    content: "?";
+    font: 12px/16px FontAwesome;
+    height: 15px;
+    left: 0;
+    text-align: center;
+    top: -1px;
+    width: 15px;
+}
+
+
+.headerTit  tr th{ text-align:center; font-weight:normal; padding:10px 20px !important;}
+.headerTit  tr th:first-child {    text-align:left;}
+
+.tableCon tr td{ text-align:center; font-weight:normal; padding:10px 20px !important;}
+.tableCon tr td:first-child {    text-align:left; font-family: 'Segoe UI'; font-weight: 600; font-style: normal;}
+
+.sky-form a { color:#1479e3; padding-left:10px;}
+
+.sky-form span { color:#1479e3;}
+
+
+.agentDrop { border: solid 1px #FFF;}
+
+.selectbox { width:auto; display:inline-block !important; height:30px !important;  padding: 2px 5px;  background-color:transparent !important; }
+.selectbox  select {border:none !important; font-size:14px !important; color:#1479e3 !important; height:30px !important; text-align:right !important;  background-color:transparent !important;  }
+
+.sky-form .select i {
+    background: rgb(255, 255, 255) none repeat scroll 0 0;
+    box-shadow: 0 0 0 12px rgb(255, 255, 255);
+    height: 7px;
+    position: absolute;
+    right: 14px;
+    top: 14px;
+    width: 5px;
+}
+
+
+.applicationFeetc th { text-align:center; padding:12px 20px !important;}
+.applicationFeetc th:nth-child(1) { text-align:left; background-color:#eeeeee;}
+
+.applicationFeetc tr td { text-align:center; padding:12px 20px ;}
+.applicationFeetc tr td:nth-child(1) {text-align:left; background-color:#eeeeee;}
+
+.btnCb { text-align:center !important; margin:auto; margin:20px 0px 0px 0px;}
+
+
+.breakline { color:#F00 !important; font-size:16px; font-weight:bold; background-color:#FFFFFF !important;}
+.red { color:#F00;}
+
+.applicationinputbox { width:100px; border: 1px solid rgb(234, 234, 234); height:30px; text-align:center; line-height:25px;}
+
+
+
+
+/* --------------------- home body css ------------------------------------------------------*/
+
+
+
+/* --------------------- new css 25.08.16 ------------------------------------------------------*/
+
+.flipbold {font-family: "Segoe UI";  font-size: 15px;  font-weight: bold; padding-top:15px;}
+.flipbold span { color:#ffd300; padding:0px 10px;}
+.street { font-size:13px !important; font-weight:normal !important;}
+.greenbold { color:#1fb714; font-weight:bold;}
+.blackbold { color:#000; font-weight:bold;}
+
+.trm tr > td:last-child { text-align:right;}
+
+
+
+
+
+
+
+
+
+
+.buttncc{
+cursor:pointer;
+background:#ef902d;
+margin:10px 5px;
+color:#fff!important;
+padding:10px 10px !important;
+border-radius:4px;	
+line-height: 60px;
+}
+
+
+
+
