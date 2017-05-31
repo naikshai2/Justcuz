@@ -44,10 +44,22 @@
   pre.src-java:before  { content: 'Java'; }
   pre.src-sql:before   { content: 'SQL'; }
 
-  table { border-collapse:collapse; }
+  table {border-collapse:collapse;background-color: rgba(255, 67, 67, 0);/* box-shadow: 1px 1px black; */}
+
+table.table.table-bordered.trm {
+    border: 2px solid #f99d1b;
+    border-collapse: collapse;
+}
+
+table.table.table-bordered.trm {
+    border-collapse: separate;
+    border: solid black 4px;
+    border-radius:6px;
+    -moz-border-radius:6px;
+}
   caption.t-above { caption-side: top; }
   caption.t-bottom { caption-side: bottom; }
-  td, th { vertical-align:top;  }
+  td, th {vertical-align:top;}
   th.right  { text-align: center;  }
   th.left   { text-align: center;   }
   th.center { text-align: center; }
@@ -86,4 +98,7 @@ body {
 	color:#2e2e2e;
 background-color:#ffffff
 	
+}
+#group2 {
+    visibility: hidden;
 }
